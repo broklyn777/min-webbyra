@@ -24,7 +24,7 @@ const HamburgerMenu: React.FC = () => {
       <ul
         className={`${
           isOpen ? 'block' : 'hidden'
-        } absolute bg-gray-800 text-white p-4 mt-2 space-y-4 rounded-lg lg:static lg:bg-transparent lg:flex lg:space-y-0 lg:space-x-4 lg:p-0 lg:hidden`}
+        } z-50 absolute bg-gray-800 text-white p-4 mt-2 space-y-4 rounded-lg lg:static lg:bg-transparent  lg:space-y-0 lg:space-x-4 lg:p-0 lg:hidden`}
       >
         <li>
           <Link legacyBehavior href="/tjanster">
