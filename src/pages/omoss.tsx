@@ -79,7 +79,7 @@ const OmOss = () => {
   Östanå Webbservice AB är stolta över att ha arbetat med en rad framstående kunder och partners i Österåkers kommun och omgivande områden. Några av dessa inkluderar:
   <ul className="list-disc list-inside ml-4">
     <li>Österåkers kommun</li>
-    <li>Östanå Skolan</li>
+    <li>Östanå Slott</li>
     <li>Åkersberga Centrum</li>
     <li>Åkersberga Golfklubb</li>
   </ul>

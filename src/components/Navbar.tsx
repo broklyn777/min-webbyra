@@ -15,10 +15,16 @@ const Navbar = () => {
           {/* Lägg till denna rad */}
           <ul className="hidden lg:flex space-x-4"> {/* Lägg till "hidden lg:flex" här */}
             <li className="mr-4">
+              <Link href="/todo">Att göra</Link>
+            </li>
+            <li className="mr-4">
               <Link href="/tjanster">Tjänster</Link>
             </li>
             <li className="mr-4">
               <Link href="/seo">SEO</Link>
+            </li>
+            <li className="mr-4">
+              <Link href="/galleri">Galleri</Link>
             </li>
             <li className="mr-4">
               <Link href="/omoss">Om oss</Link>
