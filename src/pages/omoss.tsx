@@ -24,13 +24,17 @@
 // export default OmOss
 
 // pages/omoss.tsx
+import FlipCard from '@/components/FlipCard';
 import React from 'react';
 import Layout from '../components/Layout';
 
 const OmOss = () => {
   return (
- 
+  <div className="bg-gradient-to-r from-green-400 to-blue-500">
       <div className="container mx-auto px-4 py-12">
+
+
+        
         <h1 className="text-4xl font-bold mb-8">Om Östanå Webbservice AB</h1>
 
         <h2 className="text-3xl font-semibold mb-4">Historia</h2>
@@ -49,19 +53,40 @@ const OmOss = () => {
           partnerskap och skapa hållbara lösningar som genererar verkligt värde för våra kunder.
         </p>
 
-        <h2 className="text-3xl font-semibold mb-4">Kärnvärden</h2>
-        <p className="mb-4">
+      <h2 className="text-3xl font-semibold mb-4 ">Kärnvärden</h2>
+
+        {/* <p className="mb-4">
           På Östanå Webbservice AB tror vi på att bygga relationer med våra kunder baserat på öppenhet, ärlighet och integritet.
           Vi fokuserar på att erbjuda personlig service och skräddarsydda lösningar som uppfyller våra kunders unika behov.
           Vi värdesätter kreativitet, innovation och ständig förbättring och vi arbetar ständigt för att förbättra våra
           processer och metoder för att ligga i framkant inom vår bransch.
-        </p>
+        </p> */}
+     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+  <div className="flex justify-center">
+    <FlipCard
+      title="Personlig service"
+      description="På Östanå Webbservice AB tror vi på att bygga relationer med våra kunder baserat på öppenhet, ärlighet och integritet"
+    />
+  </div>
+  <div className="flex justify-center">
+    <FlipCard
+      title="Kund fokus"
+      description="Vi fokuserar på att erbjuda personlig service och skräddarsydda lösningar som uppfyller våra kunders unika behov."
+    />
+  </div>
+  <div className="flex justify-center">
+    <FlipCard
+      title="Innovation"
+      description="Vi värdesätter kreativitet, innovation och ständig förbättring och vi arbetar ständigt för att förbättra våra processer och metoder för att ligga i framkant inom vår bransch."
+    />
+  </div>
+</div>
 
         <h2 className="text-3xl font-semibold mb-4">Ledningsteamet</h2>
         <p className="mb-4">
-          Vårt ledningsteam leds av Einar Löfgren, som har över 30 års erfarenhet av mediaplanering och webbutveckling.
-          Einar, 56 år gammal, har stor erfarenhet av att förstå företagens behov och utmaningar och har ett djupt engagemang
-          för att hjälpa våra kunder att övervinna dessa utmaningar genom innovativa och effektiva digitala lösningar. Einar har samlat ett team av passionerade och begåvade experter inom webbdesign, SEO, Google Ads och digital marknadsföring som delar hans engagemang för att leverera enastående resultat för våra kunder.
+          Vårt ledningsteam leds av Bosse Karlsson, som har över 30 års erfarenhet av mediaplanering och webbutveckling.
+          Bosse, 56 år gammal, har stor erfarenhet av att förstå företagens behov och utmaningar och har ett djupt engagemang
+          för att hjälpa våra kunder att övervinna dessa utmaningar genom innovativa och effektiva digitala lösningar. Bosse har samlat ett team av passionerade och begåvade experter inom webbdesign, SEO, Google Ads och digital marknadsföring som delar hans engagemang för att leverera enastående resultat för våra kunder.
 </p>
 <h2 className="text-3xl font-semibold mb-4">Arbetsområden och expertis</h2>
 <p className="mb-4">
@@ -101,6 +126,7 @@ const OmOss = () => {
 Vi uppmuntrar också våra anställda att delta i volontärarbete och ge tillbaka till samhället genom att engagera sig i lokala initiativ och evenemang. Vi tror att genom att göra en positiv inverkan på världen runt omkring oss, kan vi skapa en bättre framtid för alla.
 
 </p>
+  </div>
   </div>
 
 );

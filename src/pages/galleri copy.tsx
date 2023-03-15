@@ -27,17 +27,13 @@ const images = [
   return (
     <>
      
-     
-        <div className="bg-gradient-to-r from-green-400 to-blue-500">
-  <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-    <h2 className="text-3xl font-extrabold text-white">
-      Vårt galleri
-    </h2>
-    <p className="text-lg text-white mt-4 mb-8 px-4 sm:px-0 ">
-      Välkommen till vårt galleri där vi stolt visar upp några av våra bästa webbdesignprojekt. Bläddra igenom vår samling av innovativa och moderna designlösningar som hjälper våra kunder att sticka ut på nätet.
-    </p>
+      <div className="container mx-auto py-12">
+        <h1 className="text-4xl font-bold text-center mb-8">Galleri</h1>
+        <p className="text-lg text-center text-gray-600 mt-4 mb-8 px-4 sm:px-0">
+  Välkommen till vårt galleri där vi stolt visar upp några av våra bästa webbdesignprojekt. Bläddra igenom vår samling av innovativa och moderna designlösningar som hjälper våra kunder att sticka ut på nätet.
+</p>
 
-   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {images.map((src, index) => (
             <div
               key={index}
@@ -71,10 +67,6 @@ const images = [
           </div>
         </div>
       )}
-  </div>
-
-
-       
     </>
   );
 };

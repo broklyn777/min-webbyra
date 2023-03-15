@@ -11,7 +11,9 @@ const Footer: React.FC = () => {
           <div className="w-full md:w-1/3 mb-8 md:mb-0">
             <h3 className="text-lg font-semibold mb-4">Kontaktinformation</h3>
             <p>
-              Adress: Österåkers Kommun, 123 45 Åkersberga, Sverige
+              Bosse Karlsson
+               <br />
+              Adress: Smalavägen, 123 45 Åkersberga
               <br />
               Telefon: <a href="tel:+46707777777">070 777 77 77</a>
             </p>
